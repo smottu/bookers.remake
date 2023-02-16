@@ -1,5 +1,7 @@
 class BooksController < ApplicationController
   def index
+    @books = Books.all
+
   end
 
   def show
@@ -7,4 +9,8 @@ class BooksController < ApplicationController
 
   def edit
   end
+
+  private
+
+
 end
